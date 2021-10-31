@@ -5,13 +5,23 @@ box-sizing: border-box;
 }
 
 body {
+background: #000000;
 color: #0eaddd;
 font-family: Helvetica, Arial, sans-serif;
+margin: 0;
+line-height: 1.7;
+}
+
+img {
+display: flex;
+max-width: 50%;
+object-fit: cover;
+margin: 0 auto;
 }
 
 header {
 padding: 20px 35px;
-background-color: #000000;
+
 }
 
 header h1 {
@@ -64,33 +74,85 @@ border-bottom: 3px solid;
 }
 
 .bio {
-background-color: #000000;
-color: orange;
+background-color: darkgray;
+color: black;
 text-align: center;
+background-image: url(../images/bio.jpg);
+background-size: contain;
+background-position: center;
+background-blend-mode: multiply;
+opacity: inherit;
 }
 
 .bio p {
 line-height: 1.7;
-color:  orange;
 width: 80%;
 font-size: 20px;
 margin: 0 auto;
+color: orange;
 }
 
 .work {
-background-color: #000000;
 color: orange;
 text-align: center;
 }
 
-.project {
-width: 900px;
-margin: 0 auto 30px auto;
-background: #024e76;
-color: #fce138;
-overflow: auto;
+.projects {
+background-color: white;
+overflow: hidden;
 }
 
-img {
-    object-fit: cover;
+.main-portfolio-img {
+max-width: 100%;
+justify-content: center;
+}
+
+.main-portfolio-img:hover {
+transform: scale(1.2);
+opacity: .5;
+}
+
+.portfolio-img {
+transition: 
+transform 750ms cubis-bezier(.5, 0, .5, 1),
+opacity 250ms linear;
+}
+
+.portfolio-img:hover {
+transform: scale(1.2);
+opacity: .5;
+}
+
+footer {
+text-align: center;
+background-image: url(../images/contact.jpg);
+background-size: cover;
+}
+
+.contact-info {
+display: block;
+color: orange;
+text-align: center;
+}
+
+.contact-info div {
+display: inline-block;
+vertical-align: top;
+text-align: left;
+color: white;
+margin: 30px auto;
+}
+
+.contact-info iframe {
+width: 500px;
+height: 250px;
+}
+
+.contact-info p,
+.contact-info address {
+margin: 20px 0;
+line-height: 1.5;
+font-size: 40px;
+font-style: normal;
+font-weight: bolder;
 }
