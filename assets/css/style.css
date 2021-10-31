@@ -54,6 +54,15 @@ section {
 padding: 60px;
 }
 
+.section-title {
+font-size: 55px;
+color: orange;
+margin-bottom: 35px;
+padding: 0 100px 20px 100px;
+display: inline-block;
+border-bottom: 3px solid;
+}
+
 .bio {
 background-color: #000000;
 color: orange;
@@ -68,12 +77,20 @@ font-size: 20px;
 margin: 0 auto;
 }
 
-.section-title {
-font-size: 55px;
+.work {
+background-color: #000000;
 color: orange;
-margin-bottom: 35px;
-padding: 0 100px 20px 100px;
-display: inline-block;
-border-bottom: 3px solid;
+text-align: center;
 }
 
+.project {
+width: 900px;
+margin: 0 auto 30px auto;
+background: #024e76;
+color: #fce138;
+overflow: auto;
+}
+
+img {
+    object-fit: cover;
+}
