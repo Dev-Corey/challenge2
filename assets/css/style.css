@@ -97,6 +97,14 @@ color: orange;
 text-align: center;
 }
 
+.project-section {
+    overflow: hidden;
+}
+
+.project-section-sub {
+    overflow: hidden;
+}
+
 .projects {
 background-color: white;
 overflow: hidden;
@@ -105,16 +113,18 @@ overflow: hidden;
 .main-portfolio-img {
 max-width: 100%;
 justify-content: center;
+overflow: hidden;
 }
 
 .main-portfolio-img:hover {
+overflow: hidden;
 transform: scale(1.2);
 opacity: .5;
 }
 
 .portfolio-img {
 transition: 
-transform 750ms cubis-bezier(.5, 0, .5, 1),
+    transform 750ms cubis-bezier(.5, 0, .5, 1),
 opacity 250ms linear;
 }
 
